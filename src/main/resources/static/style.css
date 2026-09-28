@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f5ff;
+    color: #222;
+}
+
+/* Navbar */
+
+.navbar {
+    height: 70px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #6c3cff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #6c3cff;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #eee8ff,
+        #ffffff,
+        #e8ddff
+    );
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #6c3cff;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.hero button,
+.event-card button,
+.checkin-box button {
+    border: none;
+    background: #6c3cff;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hero button:hover,
+.event-card button:hover,
+.checkin-box button:hover {
+    background: #5425d6;
+}
+
+
+/* Common Section */
+
+.section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.section-subtitle {
+    color: #777;
+    margin-bottom: 40px;
+}
+
+
+/* Event Cards */
+
+.event-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.event-card {
+    background: white;
+    width: 300px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.event-card h3 {
+    font-size: 23px;
+    color: #6c3cff;
+    margin-bottom: 15px;
+}
+
+.event-card p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.event-card button {
+    margin-top: 15px;
+    width: 100%;
+}
+
+
+/* Ticket */
+
+.ticket-section {
+    background: #eee9ff;
+}
+
+.ticket-card {
+    max-width: 450px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.ticket-card img {
+    width: 250px;
+    height: 250px;
+    margin: 20px auto;
+    display: block;
+}
+
+.ticket-uuid {
+    background: #f3f1ff;
+    padding: 12px;
+    border-radius: 8px;
+    word-break: break-all;
+    font-size: 14px;
+}
+
+
+/* Check-in */
+
+.checkin-box {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.checkin-box input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.checkin-box button {
+    width: 100%;
+}
+
+#validationResult {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+
+/* Footer */
+
+footer {
+    background: #21183d;
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
+
+footer h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 7px;
+    color: #ddd;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .section {
+        padding: 60px 5%;
+    }
+}
